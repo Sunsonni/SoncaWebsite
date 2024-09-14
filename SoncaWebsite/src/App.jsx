@@ -11,9 +11,8 @@ function App() {
 
   return (
     <>
-       <img src={soncaLogo} alt="Website Logo"/>
-       <h1>hello</h1>
-      <PaintWindow />
+       <img className='title' src={soncaLogo} alt="Website Logo"/>
+        <PaintWindow />
        <Outlet />
     </>
   )
