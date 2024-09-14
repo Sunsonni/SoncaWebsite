@@ -1,45 +1,30 @@
 import './PaintWindow.css'
-import Moveable from 'react-moveable'
+import Draggable from 'react-draggable'
 import React, { useRef, useState } from 'react'
+import minimize from '../../../Content/minimize.svg'
+import fullscreen from '../../../Content/fullscreen.svg'
+import close from '../../../Content/close.svg'
 
 const Top = () => {
     return (
     <div className='top'>
         <p className='paint-text'>untitled - paint</p>
+        <div className='spacer'></div>
+        <img src={minimize} className='minimize'/>
+        <img src={fullscreen} className='minimize'/>
+        <img src={close} className='minimize close'/>
     </div>
     );
 }
-function PaintWindow() {
-    const targetRef = useRef(null);
-    const [frame, setFrame] = useState({
-        translateX: 0,
-        translateY: 0,
-    });
+const PaintWindow = () => {
+
 
     return (
-        <>
-            <div 
-            ref={targetRef}
-            className="paint-window"
-            style={{
-                transform: `translate(${frame.translateX}px, ${frame.translateY}px)`,
-            }}
-            >
+        <Draggable bounds='parent'>
+            <div className="paint-window">
                 <Top />
             </div>
-
-            <Moveable
-                target={targetRef.current}
-                draggable={true}
-                bounds={'window'}
-                onDrag={({ target, left, top, delta }) => {
-                    setFrame((prev) => ({
-                        translateX: prev.translateX + delta[0],
-                        translateY: prev.translateY + delta[1],
-                    }));
-                }}
-            />
-        </>
+        </Draggable>
     )
 }
 
