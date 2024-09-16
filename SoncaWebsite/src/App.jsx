@@ -13,7 +13,7 @@ function App() {
     <>
        <img className='title' src={soncaLogo} alt="Website Logo"/>
         <PaintWindow />
-       <Outlet />
+       {/* <Outlet /> */}
     </>
   )
 }

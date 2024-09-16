@@ -43,7 +43,22 @@
 
 .title{
   position: absolute; 
-  top: -20px;
+  top: -5%;
   left: 2%;
-  width: 600px;
+  width: auto;
+  height: 35%;
+  z-index: 6;
+}
+
+@media screen and (max-width: 600px){
+  .title{
+    position: absolute; 
+    top: -5%;
+    left: 2%;
+    width: auto;
+    height: 30%;
+    z-index: 6;
+  }
+  
+  
 }
