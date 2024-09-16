@@ -4,6 +4,7 @@ import React, { useRef, useState, useEffect } from 'react'
 import minimize from '../../../Content/minimize.svg'
 import fullscreen from '../../../Content/fullscreen.svg'
 import close from '../../../Content/close.svg'
+import collabs from '../../../Content/Collaborations2.svg'
 
 const Top = () => {
     return (
@@ -55,10 +56,13 @@ const PaintWindow = () => {
 
 
     return (
+        <div>
             <div className="paint-window">
                 <Top />
                 <Collaborations />
             </div>
+            <img className='collabs'src={collabs} z-index='5'/>
+        </div>
     )
 }
 
