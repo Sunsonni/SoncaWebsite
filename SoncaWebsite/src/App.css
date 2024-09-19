@@ -50,6 +50,20 @@
   z-index: 6;
 }
 
+.social-media-links{
+  position: absolute;
+  width: 22%;
+  display: flex;
+  justify-content: space-around;
+  bottom: 2%;
+  right: 8%;
+  z-index: 1;
+}
+
+.icon{
+  width: 4vw;
+}
+
 @media screen and (max-width: 600px){
   .title{
     position: absolute; 
