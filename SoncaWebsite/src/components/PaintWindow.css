@@ -9,7 +9,7 @@
     align-items: flex-start; 
     flex-direction: column;
     position: absolute;
-    left: 20px;
+    left: 5%;
     bottom: 5%;
     top: 20%;
     overflow: hidden;
@@ -57,14 +57,26 @@
     background-color: #d9d9d9;
     border-radius: 0;
     text-shadow: 1px 1px  2px white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
 
 }
 
 .tabs-container{
     display: flex;
-    position: relative;
     width: 100%;
-    height: auto;
+    align-items: center;
+}
+
+.tabs-wrapper{
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.tabs{
+    display: flex;
+    transition: scroll 0.3x ease;
 }
 
 .tab-button {
@@ -78,13 +90,25 @@
     margin-right: 10px;
 }
 
+.scroll-button {
+    cursor: pointer;
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+}
+
+.scroll-button.left {
+    visibility: hidden;
+}
+
+
+
 
 .iframe{
     width: 90%;
     height: 80%;
     margin: 0 5% 5%;
     border: none;
-    
 }
 
 .collaborations{
@@ -97,5 +121,5 @@
     height: auto;
     position: absolute;
     bottom: 0%;
-    left: 5%;
+    left: 6%;
 }

@@ -15,6 +15,7 @@ function App() {
        <img className='title' src={soncaLogo} alt="Website Logo"/>
         <NotePad />
         <PaintWindow />
+        
        {/* <Outlet /> */}
     </>
   )

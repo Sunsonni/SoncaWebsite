@@ -1,10 +1,39 @@
 .notepad{
     position: absolute;
-    right: 3%;
+    right: 10px;
     top: 3%;
-    background-color: #E5CEE2;
-    border: 6px solid black;
-    border-radius: 20px;
-    width: 40%;
+    right: 5%;
     height: 85%;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+}
+
+.top-notepad{
+    position: absolute;
+    background-color: #F9BCC6;
+    z-index: 2;
+    top: 18px;
+    left: 18px;
+    width: 94.2%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 3px solid black ;
+}
+
+.notepad-main-body {
+    width: 85%;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+
+.notepad-text{
+    position: absolute;
+    font-size: larger;
+    width: 70%;
+    left: 15%;
+    top: 20%;
 }
