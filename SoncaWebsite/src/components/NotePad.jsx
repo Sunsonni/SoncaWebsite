@@ -1,6 +1,6 @@
 import './NotePad.css'
-import Notepadbackground from '../../../Content/Notepadbackground.svg';
-import NotepadMainBody from '../../../Content/NotepadMainBody.svg';
+import Notepadbackground from '../../dist/Content/notepadbackground.svg';
+import NotepadMainBody from '../../dist/Content/NotepadMainBody.svg';
 import { useState } from 'react'
 
 const NotepadTop = () => {

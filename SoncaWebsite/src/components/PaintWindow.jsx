@@ -1,10 +1,10 @@
 import './PaintWindow.css'
 import Draggable from 'react-draggable'
 import React, { useRef, useState, useEffect } from 'react'
-import minimize from '../../../Content/minimize.svg'
-import fullscreen from '../../../Content/fullscreen.svg'
-import close from '../../../Content/close.svg'
-import collabs from '../../../Content/Collaborations2.svg'
+import minimize from '../../dist/Content/minimize.svg'
+import fullscreen from '../../dist/Content/fullscreen.svg'
+import close from '../../dist/Content/close.svg'
+import collabs from '../../dist/Content/Collaborations2.svg'
 
 
 

@@ -1,6 +1,6 @@
-import spotifyLogo from '../../../Content/spotify logo.svg'
-import emailLogo from '../../../Content/email logo.svg'
-import instaLogo from '../../../Content/instalogo.svg'
+import spotifyLogo from '../../dist/Content/spotify logo.svg'
+import emailLogo from '../../dist/Content/email logo.svg'
+import instaLogo from '../../dist/Content/instalogo.svg'
 import '../App.css'
 const SocialMediaLinks = () => {
     return (
