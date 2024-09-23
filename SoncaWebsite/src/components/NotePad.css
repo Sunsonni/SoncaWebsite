@@ -14,13 +14,17 @@
 .top-notepad{
     position: absolute;
     background-color: #F9BCC6;
-    z-index: 2;
-    top: 18px;
-    left: 18px;
+    z-index: 1;
+    top: 2.25%;
+    left: 3%;
     width: 94.2%;
+    height: 10%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom: 3px solid black ;
+    display: flex;
+    align-items: center;
+
 }
 
 .notepad-main-body {
@@ -32,8 +36,19 @@
 
 .notepad-text{
     position: absolute;
-    font-size: larger;
+    font-size: 90%;
+    display: inline-block;
     width: 70%;
     left: 15%;
     top: 20%;
+}
+
+.tab{
+    font-size: auto;
+    background-color: #d9d9d9;
+    border-radius: 0;
+    text-shadow: 1px 1px  2px white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
 }
