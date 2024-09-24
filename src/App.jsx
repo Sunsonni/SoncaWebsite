@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 import PaintWindow from './components/paintWindow'
 import NotePad from './components/NotePad'
 import SocialMediaLinks from './components/SocialMediaLinks'
-import AudioPlayer from './/components/AudioPlayer'
+import AudioPlayer from './components/AudioPlayer'
 
 function App() {
   const [count, setCount] = useState(0)
