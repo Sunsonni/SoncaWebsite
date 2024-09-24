@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import soncaLogo from '../dist/Content/SoncaLogo.svg'
+import soncaLogo from './assets/SoncaLogo.svg'
 import './App.css'
 import { Outlet } from 'react-router-dom' 
 import PaintWindow from './components/paintWindow'
