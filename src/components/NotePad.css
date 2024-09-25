@@ -2,7 +2,7 @@
     position: absolute;
     right: 10px;
     top: 3%;
-    right: 5%;
+    right: 3%;
     height: 85%;
 }
 
@@ -36,7 +36,7 @@
 
 .notepad-text{
     position: absolute;
-    font-size: 90%;
+    font-size: 1vw;
     display: inline-block;
     width: 70%;
     left: 15%;
@@ -45,10 +45,9 @@
 
 .tab{
     font-size: auto;
-    background-color: #d9d9d9;
+    background-color: #F9BCC6;
     border-radius: 0;
     text-shadow: 1px 1px  2px white;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
 }

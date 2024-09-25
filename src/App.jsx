@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import soncaLogo from './assets/SoncaLogo.svg'
+import soncaLogo from './assets/SoncaLogo.png'
 import './App.css'
 import { Outlet } from 'react-router-dom' 
 import PaintWindow from './components/PaintWindow'
@@ -8,16 +8,14 @@ import SocialMediaLinks from './components/SocialMediaLinks'
 import AudioPlayer from './components/AudioPlayer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <div className='mobile-version'>
        <img className='title' src={soncaLogo} alt="Website Logo"/>
         <SocialMediaLinks className="links"/>
         <NotePad className="notepad"/>
-        <PaintWindow />
-        <AudioPlayer/>
-    </>
+        <PaintWindow className="paint-window"/>
+        <AudioPlayer className="audio"/>
+    </div>
   )
 }
 

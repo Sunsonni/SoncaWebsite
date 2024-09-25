@@ -38,20 +38,34 @@
 
 .audio-player{
   position: absolute;
+  margin-top: 1%;
   margin-left: 38%;
-  width: 25%;
+  width: 22%;
   z-index: 10;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
   .title{
     position: absolute; 
-    top: -5%;
-    left: 2%;
     width: auto;
-    height: 30%;
+    height: 20%;
     z-index: 3;
   }
   
-  
+  .mobile-version{
+    display: flex;
+    width: 100vw;
+  }
+
+  .audio{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .audio-player{
+    width: 90%;
+    margin: 40% 5%;
+  }
+   
 }

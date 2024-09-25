@@ -2,6 +2,7 @@ import './NotePad.css'
 import Notepadbackground from '../assets/notepadbackground.svg';
 import NotepadMainBody from '../assets/NotepadMainBody.svg';
 import { useState } from 'react'
+import { ButtonGroup, Button } from 'reactstrap'
 
 const NotepadTop = () => {
     const [ tab, setTab ] = useState('about');
@@ -16,10 +17,12 @@ const NotepadTop = () => {
     return (
         <div>
             <div className='top-notepad'>
-                <button className="tab" onClick={() => setTab('about')}>About</button>
-                <button className="tab"onClick={() => setTab('Shock City Studios')}>Shock City Studios</button>
-                <button className="tab"onClick={() => setTab('The Truth in Advertising')}>The Truth in Advertising</button>
-                <button className="tab"onClick={() => setTab('Brooklyn Basement Records')}>Brooklyn Basement Records</button>
+                <ButtonGroup>
+                    <Button className="tab" onClick={() => setTab('about')}>About</Button>
+                    <Button className="tab"onClick={() => setTab('Shock City Studios')}>Shock</Button>
+                    <Button className="tab"onClick={() => setTab('The Truth in Advertising')}>TIA</Button>
+                    <Button className="tab"onClick={() => setTab('Brooklyn Basement Records')}>Brooklyn Basement</Button>
+                </ButtonGroup>
             </div>
             <img className='notepad-main-body'src={NotepadMainBody}></img>
             <h3 className='notepad-text'>{blurbs[tab]}</h3>
