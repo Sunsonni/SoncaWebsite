@@ -227,20 +227,6 @@
     height: 100vh;
   }
 
-  .side-by-side{
-    display: flex; /* Use flexbox to arrange items side by side */
-    flex-direction: row; /* Align items in a row */
-    justify-content: center; /* Center items horizontally */
-    align-items: center;
-    margin: 0 auto; /* Center the container */
-  }
-
-  .audio-player,
-  .social-media-links {
-    width: 48%; /* Adjust the width to fit side by side */
-    position: relative; /* Ensure it doesn't use absolute positioning */
-    margin: 0; /* Remove any margins */
-  }
 
   .paint-window,
   .notepad,
@@ -280,7 +266,7 @@
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .paint-window,
   .notepad,
   .audio-player,
@@ -301,5 +287,5 @@
   .collabs{
     display: none;
   }
-}
+} */
 
