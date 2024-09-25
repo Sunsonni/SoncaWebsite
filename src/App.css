@@ -3,6 +3,8 @@
   height: 100%;
   margin: 0;
   padding: 0;
+  min-width: 300px; /* Reduced minimum width */
+  min-height: 500px;
 }
 
 .card {
@@ -13,7 +15,7 @@
   color: #888;
 }
 
-.title{
+.title {
   position: absolute; 
   top: -5%;
   left: 2%;
@@ -22,7 +24,7 @@
   z-index: 3;
 }
 
-.social-media-links{
+.social-media-links {
   position: absolute;
   width: 22%;
   display: flex;
@@ -32,11 +34,11 @@
   z-index: 1;
 }
 
-.icon{
+.icon {
   width: 4vw;
 }
 
-.audio-player{
+.audio-player {
   position: absolute;
   margin-top: 1%;
   margin-left: 38%;
@@ -44,72 +46,260 @@
   z-index: 10;
 }
 
-/* @media (max-width: 768px){
-  .title{
-    position: absolute; 
-    margin: auto;
-    width: auto;
-    z-index: 3;
-  }
-  
-  .mobile-version{
+.notepad {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  height: 85%;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+}
+
+.top-notepad {
+  position: absolute;
+  background-color: #F9BCC6;
+  z-index: 1;
+  top: 2.25%;
+  left: 3%;
+  width: 94%;
+  height: 10%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 3px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.notepad-main-body {
+  width: 85%;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+}
+
+.notepad-text {
+  position: absolute;
+  font-size: 1vw;
+  display: inline-block;
+  width: 70%;
+  left: 15%;
+  top: 20%;
+}
+
+.tab {
+  font-size: auto;
+  background-color: #F9BCC6;
+  border-radius: 0;
+  text-shadow: 1px 1px 2px white;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.paint-window {
+  background-color: #d6d6d6;
+  width: 55vw;
+  height: 75%;
+  border: 4px solid #F190C4;
+  display: flex;
+  align-items: flex-start; 
+  flex-direction: column;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  top: 20%;
+  overflow: hidden;
+}
+
+.top {
+  min-width: 100%;
+  background-color: #D2ABCA;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.paint-text {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: xx-large;
+  color: white;
+  text-shadow: 1px 1px #F190C4;
+  text-align: left;
+  padding-left: 4%;
+  margin: 1%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.minimize {
+  height: 50px;
+  width: 50px;
+}
+
+.close {
+  margin-right: 2%;
+}
+
+.custom-tab {
+  font-family: 'Rubik', sans-serif;
+  color: #F190C4;
+  font-weight: bold;
+  font-size: x-large;
+  background-color: #d9d9d9;
+  border-radius: 0;
+  text-shadow: 1px 1px 2px white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.tabs-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.tabs-wrapper {
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.tabs {
+  display: flex;
+  transition: scroll 0.3s ease;
+}
+
+.tab-button {
+  display: inline-block;
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #555;
+  outline: none;
+  margin-right: 10px;
+}
+
+.scroll-button {
+  cursor: pointer;
+  background-color: #ccc;
+  border: none;
+  padding: 10px;
+}
+
+.scroll-button.left {
+  visibility: hidden;
+}
+
+.iframe {
+  width: 90%;
+  height: 80%;
+  margin: 0 5% 5%;
+  border: none;
+}
+
+.collaborations {
+  width: 100%;
+  height: 100%;
+}
+
+.collabs {
+  width: 35%;
+  height: auto;
+  position: absolute;
+  bottom: 0%;
+  left: 6%;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .container {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    overflow-y: auto;
+    height: 100vh;
   }
 
-  .audio{
-    position: relative;
-    width: 100%;
-    z-index: 10;
+  .side-by-side{
+    display: flex; /* Use flexbox to arrange items side by side */
+    flex-direction: row; /* Align items in a row */
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    margin: 0 auto; /* Center the container */
   }
 
-  .audio-player{
-    width:80%;
-    margin: 40% 5%;
+  .audio-player,
+  .social-media-links {
+    width: 48%; /* Adjust the width to fit side by side */
+    position: relative; /* Ensure it doesn't use absolute positioning */
+    margin: 0; /* Remove any margins */
   }
 
-  .social-media-links{
-
-  }
-   
-} */
-
-@media screen and (max-width: 767px) {
-  /* Basically up to, but not including an iPad */
-  .title{
-    position: absolute; 
-    margin:  5% auto;
+  .paint-window,
+  .notepad,
+  .audio-player,
+  .social-media-links {
+    width: 80%;
     height: auto;
-    width: 90%;
-    z-index: 3;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+  }
+
+
+  .title {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
   }
   
-  .mobile-version{
-    display: flex ;
-    flex-direction: row;
-    width: 100vw;
-  }
-  .notepad{
-    width: 90%;
-    margin-top: 25%;
+  .icon {
+    width: 10vw;
   }
 
-  .paint-window{
-    display: none !important;
+  .notepad-text {
+    font-size: 2.5vw;
   }
 
-
-  .audio{
-    width: 100%;
-    z-index: 10;
+  .top-notepad{
+    overflow-x: auto;
+    white-space: nowrap;
   }
 
-  .audio-player{
-    width:80%;
-    margin: 40% 5%;
+  .collabs{
+    display: none; 
+  }
+}
+
+@media (max-width: 480px) {
+  .paint-window,
+  .notepad,
+  .audio-player,
+  .social-media-links {
+    width: 95%;
+    height: auto;
+    margin: 15px auto;
+    position: relative;
+  }
+
+  .icon {
+    width: 10vw;
+  }
+
+  .notepad-text {
+    font-size: 2vw;
+  }
+  .collabs{
     display: none;
   }
-
-
 }
+

@@ -1,4 +1,4 @@
-import './NotePad.css'
+import '../App.css'
 import Notepadbackground from '../assets/notepadbackground.svg';
 import NotepadMainBody from '../assets/NotepadMainBody.svg';
 import { useState } from 'react'

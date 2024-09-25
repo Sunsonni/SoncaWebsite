@@ -1,4 +1,4 @@
-import './PaintWindow.css'
+import '../App.css'
 import Draggable from 'react-draggable'
 import React, { useRef, useState, useEffect } from 'react'
 import minimize from '../assets/minimize.svg'
@@ -76,6 +76,7 @@ const Collaborations = () => {
 
 
     return (
+      <Draggable>
         <div className='collaborations'>
             {/* Tabs */}
             <div className='tabs-container'>
@@ -101,6 +102,7 @@ const Collaborations = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             ></iframe>
         </div>
+        </Draggable>
     );
 }
 
