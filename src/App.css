@@ -44,28 +44,72 @@
   z-index: 10;
 }
 
-@media screen and (max-width: 1000px){
+/* @media (max-width: 768px){
   .title{
     position: absolute; 
+    margin: auto;
     width: auto;
-    height: 20%;
     z-index: 3;
   }
   
   .mobile-version{
     display: flex;
+    flex-direction: column;
     width: 100vw;
   }
 
   .audio{
-    position: absolute;
+    position: relative;
     width: 100%;
     z-index: 10;
   }
 
   .audio-player{
-    width: 90%;
+    width:80%;
     margin: 40% 5%;
   }
+
+  .social-media-links{
+
+  }
    
+} */
+
+@media screen and (max-width: 767px) {
+  /* Basically up to, but not including an iPad */
+  .title{
+    position: absolute; 
+    margin:  5% auto;
+    height: auto;
+    width: 90%;
+    z-index: 3;
+  }
+  
+  .mobile-version{
+    display: flex ;
+    flex-direction: row;
+    width: 100vw;
+  }
+  .notepad{
+    width: 90%;
+    margin-top: 25%;
+  }
+
+  .paint-window{
+    display: none !important;
+  }
+
+
+  .audio{
+    width: 100%;
+    z-index: 10;
+  }
+
+  .audio-player{
+    width:80%;
+    margin: 40% 5%;
+    display: none;
+  }
+
+
 }
