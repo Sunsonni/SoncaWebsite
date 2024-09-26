@@ -11,10 +11,8 @@ function App() {
   return (
     <div className='container'>
        <img className='title' src={soncaLogo} alt="Website Logo"/>
-        <div className='side-by-side'>
         <SocialMediaLinks className="links"/>
         <AudioPlayer className="audio"/>
-        </div>
         <NotePad className="notepad"/>
         <PaintWindow className="paint-window"/>
     </div>
