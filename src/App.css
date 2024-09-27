@@ -308,4 +308,24 @@ html, body {
   }
 }
 
+@media (max-width: 600px){
+  .top-notepad{
+    overflow-x: auto;
+    white-space: nowrap;
+    top: 8%;
+    height: 8%;
+  }
+
+  .notepad-main-body {
+    width: 85%;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+  } 
+
+  .notepad-text {
+    top: 25%;
+  }
+  
+}
 
