@@ -229,11 +229,14 @@ html, body {
   .paint-window,
   .notepad {
     width: 80%;
-    min-width: none;
     height: auto;
     position: relative;
     margin: 0 auto;
     left: 0;
+  }
+
+  .background{
+    min-width: none;
   }
 
   .social-media-links{
