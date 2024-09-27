@@ -236,7 +236,8 @@ html, body {
   }
 
   .background{
-    min-width: none;
+    min-width: 90%;
+
   }
 
   .social-media-links{
@@ -298,6 +299,8 @@ html, body {
   .top-notepad{
     overflow-x: auto;
     white-space: nowrap;
+    /* top: 8%; */
+    height: auto;
   }
 
   .collabs{
